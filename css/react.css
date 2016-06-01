@@ -1,2 +1,90 @@
+body {
+  font-family: Helvetica, Arial, sans-serif; }
+
+nav {
+  background: lightgray;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 99%;
+  clear: both;
+  content: "";
+  display: table; }
+  nav ul {
+    list-style: none;
+    margin: 0; }
+    nav ul li {
+      padding: 15px 0;
+      float: left;
+      text-transform: uppercase;
+      font-size: 18px; }
+      nav ul li:hover {
+        background: gray;
+        border-bottom: 3px solid lightblue;
+        color: white; }
+  nav a {
+    text-decoration: none;
+    padding: 15px 30px; }
+    nav a:hover {
+      text-decoration: none;
+      font-size: 20px;
+      margin-top: 2px; }
+    nav a:visited {
+      text-decoration: none; }
+
+div#app {
+  width: 960px;
+  margin: 10px auto; }
+
+h1 {
+  text-align: center;
+  border: 2px solid red;
+  padding: 10px; }
+  h1:hover {
+    color: red;
+    border: 2px solid black; }
+
+h2 {
+  text-align: center; }
+
+.body {
+  background-color: lightgray;
+  width: 680px;
+  height: 800px;
+  margin: 10px auto; }
+  .body span {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic; }
+    .body span:nth-child(2) {
+      position: relative;
+      top: 50px;
+      font-style: normal; }
+
+div.state {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  div.state ul {
+    list-style: none;
+    padding: 10px; }
+    div.state ul li {
+      margin-bottom: 10px; }
+
+div.data {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  div.data input {
+    margin-top: 15px;
+    padding: 10px;
+    width: 155px; }
+  div.data button {
+    margin-top: 5px;
+    padding: 10px;
+    background: lightblue;
+    font-size: 14px; }
+
+/* Build Page */
 
 /*# sourceMappingURL=react.css.map */
