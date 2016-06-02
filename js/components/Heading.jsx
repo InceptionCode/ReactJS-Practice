@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 
-class Layout extends Component{
+class Heading extends Component{
   render(){
     return(
+      <div>
       <h1 className="build-title">KillerNews.net</h1>
+      </div>
     )
   }
 }
 
- export default Layout
+ export default Heading

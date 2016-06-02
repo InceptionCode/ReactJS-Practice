@@ -9,15 +9,16 @@ class Layout extends React.Component{
 	getRight(need){
 		return "I'm good but" + " " + need;
 	}
-	//NOTE  You can even use a constructor
+	//NOTE  You can even use a constructor to set state
 	constructor(){
 		super();
 		this.state=
 		  {talk:'And I will get there.',
-			get:"Getting Better",
-			title: 'Data Binding'
+			get: 'Getting Better',
+		 	title: 'Data Flow?'
 		};
 	}
+
 	handleChange(e){
 		e.target.value;
 		this.setState({title: e.target.value});
