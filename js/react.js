@@ -36,12 +36,15 @@ class Layout extends React.Component{
 			this.setState({talk: 'This is only the beginning.'});
 		}, 5000)
 
+		//NOTE Set the boolean condition value
+    var greeting = "World";
+    (this.props.isPerson) ? greeting = <Person name= {this.props.name} /> : greeting;
 		return(
 			//NOTE Create const & var and pass the values
 			// NOTE props are attributes that can be set and added to the element
 			<div id = "root">
 				<h1 onMouseOver={this.colorChange.bind(this)}>{this.state.get}</h1>
-				<h2 onClick={this.onClick.bind(this)}>{this.props.name}</h2>
+				<h2 onClick={this.onClick.bind(this)}>{greeting}</h2>
 
 				<div className = 'body'>
 					<span>{this.getRight("I need to get better")}</span>
@@ -68,4 +71,24 @@ class Layout extends React.Component{
 	}
 }
 
-ReactDOM.render(<Layout name = "Darrell Washington" />, document.getElementById('app'));
+class Person extends React.Component {
+
+  render(){
+    return(
+      <div>
+      <span>{this.props.name}</span>
+      </div>
+    )
+  }
+}
+Layout.propTypes = {
+name: React.PropTypes.string,
+age: React.PropTypes.number,
+isPerson: React.PropTypes.bool, //NOTE Bool means that this prop should involve a boolean
+}
+Layout.defaultProps = {
+name: "Darrell Washington",
+isPerson: true //NOTE Determines the result of the boolean
+}
+
+ReactDOM.render(<Layout />, document.getElementById('app'));

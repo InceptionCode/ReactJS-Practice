@@ -1,0 +1,95 @@
+body
+  font-family: Helvetica, Arial, sans-serif
+
+nav
+  background: lightgray
+  padding: 10px
+  margin-bottom: 10px
+  width: 99%
+  clear: both
+  content: ''
+  display: table
+
+  ul
+    list-style: none
+    margin: 0
+  li
+    padding: 15px 0
+    float: left
+    text-transform: uppercase
+    font-size: 18px
+    &:hover
+      background: gray
+      border-bottom: 3px solid lightblue
+      color: white
+  a
+    text-decoration: none
+    padding: 15px 30px
+    &:hover
+      text-decoration: none
+      font-size: 20px
+      margin-top: 2px
+    &:visited
+      text-decoration: none
+
+div#app
+  width: 960px
+  margin: 10px auto
+
+/* Contact Page */
+div.heading
+  margin: 80px auto
+  width: 800px
+  background-color: lightgray
+  padding: 40px
+  border-radius: 2px
+  h1
+    text-align: center
+    padding: 5px
+
+div.contact-list
+  padding: 40px
+  margin: 0 auto
+  width: 500px
+  border: 1px solid black
+
+  input
+    padding: 10px
+    width: 100%
+    margin: 30px 0
+    &:hover
+      border: 1px solid black
+    &:focus
+      outline: none
+
+  button
+    padding: 10px
+    width: 130px
+    background-color: royalblue
+    border-radius: 5px
+    margin: 10px 190px
+    font-size: 14px
+    &:hover
+      border: 1px solid gray
+      color: white
+    &:focus
+      outline: none
+
+  ul
+    list-style: none
+    li
+      padding: 8px
+      margin: 10px auto
+      width: 400px
+      &:hover
+        background: lightgreen
+      i.delete
+        background: black
+        border-radius: 50%
+        padding: 0 6px
+        float: right
+        color: white
+        &:hover
+          text-transform: uppercase
+          padding: 2px 6px
+          cursor: pointer
