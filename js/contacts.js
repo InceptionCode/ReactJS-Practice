@@ -83,7 +83,8 @@ function Contacts (props) {
   const {deleteContact,contact} = props;
   return (
     <div>
-      <li> {props.contact.name}<i className= "delete" onClick={()=> deleteContact(contact)}>x</i></li>
+      <li> {props.contact.name}<i className="fa fa-times-circle-o delete"
+      aria-hidden="true" onClick={()=> deleteContact(contact)}></i></li>
     </div>
   )
 }

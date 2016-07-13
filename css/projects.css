@@ -51,13 +51,13 @@ div.contact-list {
   margin: 0 auto;
   width: 500px;
   border: 1px solid black; }
-  div.contact-list input {
+  div.contact-list input, div.contact-list div.to-dos button, div.to-dos div.contact-list button {
     padding: 10px;
     width: 100%;
     margin: 30px 0; }
-    div.contact-list input:hover {
+    div.contact-list input:hover, div.contact-list div.to-dos button:hover, div.to-dos div.contact-list button:hover {
       border: 1px solid black; }
-    div.contact-list input:focus {
+    div.contact-list input:focus, div.contact-list div.to-dos button:focus, div.to-dos div.contact-list button:focus {
       outline: none; }
   div.contact-list button {
     padding: 10px;
@@ -80,14 +80,88 @@ div.contact-list {
       div.contact-list ul li:hover {
         background: lightgreen; }
       div.contact-list ul li i.delete {
-        background: black;
-        border-radius: 50%;
-        padding: 0 6px;
-        float: right;
-        color: white; }
+        font-size: 1.2em;
+        float: right; }
         div.contact-list ul li i.delete:hover {
-          text-transform: uppercase;
-          padding: 2px 6px;
+          font-size: 1.7em;
           cursor: pointer; }
+
+/* Add People */
+div.add-people {
+  width: 480px;
+  margin: 35px auto;
+  display: flex;
+  justify-content: center; }
+  div.add-people input, div.add-people div.to-dos button, div.to-dos div.add-people button, div.add-people button {
+    padding: 5px; }
+    div.add-people input:focus, div.add-people div.to-dos button:focus, div.to-dos div.add-people button:focus, div.add-people button:focus {
+      outline: none;
+      border: 1px solid black; }
+  div.add-people button {
+    border-radius: 7px;
+    background-color: gray;
+    font-weight: bold; }
+    div.add-people button:hover {
+      color: white;
+      background-color: #444;
+      cursor: pointer; }
+
+div#people {
+  width: 800px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center; }
+  div#people li {
+    list-style: none;
+    background-color: lightgreen;
+    padding: 5px 10px;
+    border-radius: 10px;
+    float: left;
+    margin: 5px; }
+    div#people li i {
+      margin-left: 10px;
+      font-size: 1.2em; }
+      div#people li i:hover {
+        font-size: 1.7em;
+        cursor: pointer; }
+
+/* To-Do */
+div.to-dos {
+  margin: 10px auto;
+  width: 700px; }
+  div.to-dos input, div.to-dos button {
+    padding: 5px;
+    margin-left: 230px;
+    width: 170px; }
+    div.to-dos input:hover, div.to-dos button:hover {
+      border: 1px solid black; }
+    div.to-dos input:focus, div.to-dos button:focus {
+      outline: none;
+      border: 1px solid black; }
+  div.to-dos button {
+    margin-left: 5px;
+    width: 90px;
+    border-radius: 3px;
+    color: pink;
+    background: purple; }
+  div.to-dos ul {
+    list-style: none;
+    margin-top: 35px; }
+    div.to-dos ul li {
+      width: 500px;
+      margin: 15px auto; }
+    div.to-dos ul span.check {
+      border: 1px solid black;
+      padding: 0 7px;
+      margin-right: 15px;
+      border-radius: 50%; }
+      div.to-dos ul span.check:hover {
+        background: pink !important; }
+    div.to-dos ul i {
+      margin-left: 20px;
+      float: right;
+      font-size: 1.2em; }
+      div.to-dos ul i:hover {
+        font-size: 1.5em; }
 
 /*# sourceMappingURL=projects.css.map */
